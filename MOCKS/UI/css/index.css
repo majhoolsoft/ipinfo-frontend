@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(#140330,#290661);
+    height: 100vh;
+}
+.indigo-800{
+    color:#290661;
+}
+.indigo-900{
+    color:#140330;
+}
