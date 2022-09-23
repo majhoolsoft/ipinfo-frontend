@@ -91,5 +91,46 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+      <section class="lookup row d-flex justify-content-center">
+        <h2 class="text-center text-light">Lookup IP Address:</h2>
+        <div class="lookup__ip-group input-group mt-3 w-50">
+          <input
+            type="number"
+            min="0"
+            max="999"
+            size="3"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            class="ip-group--first col-4 form-control text-center"
+          />
+          <input
+            type="number"
+            min="0"
+            max="999"
+            size="3"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            class="ip-group--middle col-4 form-control text-center"
+          />
+          <div class="col-4 d-flex justify-content-start p-0">
+            <input
+              type="number"
+              min="0"
+              max="999"
+              size="3"
+              maxlength="3"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              class="ip-group--last form-control text-center w-75"
+            />
+            <button
+              class="ip-group--button btn bg-indigo-900 w-25 border border-white border-2 border-start-0 text-light hover-light p-0"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
