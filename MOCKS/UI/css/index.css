@@ -4,14 +4,13 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
 body {
   background-image: linear-gradient(#140330, #290661);
-  height: 100vh;
+  height: 500vh;
 }
 .background {
   position: absolute;
@@ -58,8 +57,22 @@ body {
     0 0 8px rgba(214, 51, 132, 0.6);
 }
 
+.first {
+  height: 100vh;
+}
+
+.first__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50% 50% 0 0;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
-  .lookup__ip-group {
+  .first__lookup__ip-group {
     width: 100% !important;
+  }
+  .first__footer {
+    border-radius: 10% 10% 0 0;
   }
 }
