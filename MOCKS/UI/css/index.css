@@ -89,7 +89,22 @@ code {
   opacity: 1;
   color: white;
 }
-
+.card hr {
+  border: none;
+  height: 5px;
+  width: 100% !important;
+}
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+.card i {
+  float: right;
+}
+.card--second {
+  margin-top: -10px;
+}
 @media screen and (max-width: 768px) {
   .first__lookup__ip-group {
     width: 100% !important;
