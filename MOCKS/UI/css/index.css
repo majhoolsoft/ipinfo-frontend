@@ -76,7 +76,7 @@ body {
 }
 .second__main {
   top: 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .code-window__code {
   background-color: #290661;
@@ -89,6 +89,7 @@ code {
   opacity: 1;
   color: white;
 }
+
 @media screen and (max-width: 768px) {
   .first__lookup__ip-group {
     width: 100% !important;
