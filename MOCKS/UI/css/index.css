@@ -10,7 +10,6 @@ input[type="number"] {
 }
 body {
   background-image: linear-gradient(#140330, #290661);
-  height: 500vh;
 }
 .background {
   position: absolute;
