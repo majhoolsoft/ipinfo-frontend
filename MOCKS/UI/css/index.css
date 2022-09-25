@@ -29,6 +29,21 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(214, 51, 132, 0.6);
 }
+.btn-purple {
+  background: #e14eca;
+  background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #e14eca;
+  transition: all 0.15s ease;
+  box-shadow: none;
+  color: #fff;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  margin: 4px 1px;
+  border-radius: 0.4285rem rem;
+}
 .indigo-800 {
   color: #290661;
 }
@@ -111,6 +126,12 @@ button[aria-expanded="true"] .fa-arrow-right {
 }
 button[aria-expanded="false"] .fa-arrow-down {
   display: none;
+}
+
+.ninth input,
+.ninth textarea {
+  background-color: transparent;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .first__lookup__ip-group {
