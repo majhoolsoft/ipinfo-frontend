@@ -105,6 +105,13 @@ code {
 .fourth .card--second {
   margin-top: -10px;
 }
+
+button[aria-expanded="true"] .fa-arrow-right {
+  display: none;
+}
+button[aria-expanded="false"] .fa-arrow-down {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .first__lookup__ip-group {
     width: 100% !important;
