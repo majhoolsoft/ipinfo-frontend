@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <link
+      rel="stylesheet"
+      href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
+    />
     <script
       type="text/javascript"
       src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
@@ -93,10 +97,10 @@
     </nav>
     <section class="first container border-bottom mb-5">
       <div class="background"></div>
-      <section class="first__lookup row d-flex justify-content-center py-5">
+      <section class="lookup row d-flex justify-content-center py-5">
         <h2 class="text-center col-12 col-md-3">IP Address:</h2>
         <div class="col-12 col-md-6">
-          <div class="first__lookup__ip-group input-group">
+          <div class="lookup__ip-group input-group">
             <input
               type="number"
               min="0"
@@ -147,10 +151,10 @@
     </section>
     <section class="second container mb-5">
       <div class="row">
-        <div class="second__risk col-12 col-md-3">
+        <div class="risk col-12 col-md-3">
           <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
           <div
-            class="second__risk--level alert bg-indigo-800 col-12 text-center"
+            class="risk__level alert bg-indigo-800 col-12 text-center"
             role="alert"
           >
             <h4>3/5</h4>
@@ -163,27 +167,109 @@
             </div>
           </div>
           <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
-          <div
-            class="second__risk--list alert bg-indigo-800 col-12"
-            role="alert"
-          >
-            A simple primary alert—check it out!2
-          </div>
+          <div class="risk__list alert bg-indigo-800 col-12" role="alert"></div>
         </div>
-        <div class="second__information col-12 col-md-9">
+        <div class="information col-12 col-md-9">
           <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
-          <div
-            class="second__information--details alert bg-indigo-800"
-            role="alert"
-          >
-            A simple primary alert—check it out!3
+          <div class="information__details alert bg-indigo-800" role="alert">
+            <ul>
+              <li
+                class="information__details__item d-flex flex-wrap justify-content-between"
+              >
+                <span class="text-start">Lorem, ipsum</span>
+                <span
+                  class="information__details__item__line flex-grow-1"
+                ></span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+              <li
+                class="information__details__item d-flex flex-wrap justify-content-between"
+              >
+                <span class="text-start">lorem</span>
+                <span
+                  class="information__details__item__line flex-grow-1"
+                ></span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+              <li
+                class="information__details__item d-flex flex-wrap justify-content-between"
+              >
+                <span class="text-start">Lorem, ipsum dolor.</span>
+                <span
+                  class="information__details__item__line flex-grow-1"
+                ></span>
+                <span class="text-end"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </li>
+              <li
+                class="information__details__item d-flex flex-wrap justify-content-between"
+              >
+                <span class="text-start">Lorem, ipsum dolor.</span>
+                <span
+                  class="information__details__item__line flex-grow-1"
+                ></span>
+                <span class="text-end"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </li>
+              <li
+                class="information__details__item d-flex flex-wrap justify-content-between"
+              >
+                <span class="text-start">Lorem, ipsum dolor.</span>
+                <span
+                  class="information__details__item__line flex-grow-1"
+                ></span>
+                <span class="text-end"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </li>
+            </ul>
           </div>
           <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
-          <div
-            class="second__information--geo alert bg-indigo-800"
-            role="alert"
-          >
-            A simple primary alert—check it out!3
+          <div class="information__geo alert bg-indigo-800" role="alert">
+            <ul>
+              <li class="d-flex flex-wrap justify-content-between">
+                <span class="text-start">Lorem, ipsum</span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+              <li class="d-flex flex-wrap justify-content-between">
+                <span class="text-start">Lorem, ipsum</span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+              <li class="d-flex flex-wrap justify-content-between">
+                <span class="text-start">Lorem, ipsum</span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+              <li class="d-flex flex-wrap justify-content-between">
+                <span class="text-start">Lorem, ipsum</span>
+                <span class="text-end">Lorem ipsum dolor sit amet</span>
+              </li>
+            </ul>
+            <div
+              id="map"
+              class="w-100 mx-auto rounded"
+              style="height: 300px"
+            ></div>
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+            <script>
+              // Creating map options
+              var mapOptions = {
+                center: [17.385044, 78.486671],
+                zoom: 10,
+              };
+
+              // Creating a map object
+              var map = new L.map("map", mapOptions);
+
+              // Creating a Layer object
+              var layer = new L.TileLayer(
+                "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              );
+
+              // Adding layer to the map
+              map.addLayer(layer);
+            </script>
           </div>
         </div>
       </div>

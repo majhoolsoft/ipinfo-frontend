@@ -87,3 +87,24 @@ body {
 .second {
   position: relative;
 }
+
+.information__details__item__line {
+  border-bottom: solid grey 1px;
+  height: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .information__details__item__line {
+    border-bottom: unset;
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  .information__details__item__line:before {
+    content: ":";
+  }
+  .information__details__item .text-end {
+    text-align: left !important;
+  }
+}
