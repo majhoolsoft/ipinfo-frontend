@@ -11,18 +11,6 @@ input[type="number"] {
 body {
   background-image: linear-gradient(#140330, #290661);
 }
-.background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: content-box;
-  z-index: -1;
-}
 .btn-purple:hover,
 .form-control:focus {
   border-color: #d63384;
@@ -33,6 +21,7 @@ body {
 
   background-color: white;
 }
+
 .btn-purple {
   background: #e14eca;
   background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca);
@@ -49,6 +38,9 @@ body {
   border-radius: 0.4285rem rem;
   color: black;
 }
+.btn-purple:hover {
+  color: white !important;
+}
 .indigo-800 {
   color: #290661;
 }
@@ -60,6 +52,10 @@ body {
 }
 .bg-indigo-900 {
   background-color: #140330;
+}
+
+.first {
+  border-color: #d63384 !important;
 }
 .ip-group--first {
   border-radius: 20px 0 0 20px;
@@ -79,6 +75,15 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(214, 51, 132, 0.6);
 }
-.first {
-  height: 100vh;
+.ip-group--first::-webkit-input-placeholder {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.ip-group--last[type="number"] {
+  text-align: right !important;
+  padding-right: 1rem;
+}
+.second {
+  position: relative;
 }

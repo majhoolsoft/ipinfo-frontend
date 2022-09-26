@@ -91,40 +91,12 @@
         </div>
       </div>
     </nav>
-    <section class="first container">
+    <section class="first container border-bottom mb-5">
       <div class="background"></div>
-      <section class="first__lookup row d-flex justify-content-center">
-        <h2 class="text-center">Lookup IP Address:</h2>
-        <div class="first__lookup__ip-group input-group mt-3 w-50">
-          <input
-            type="number"
-            min="0"
-            max="999"
-            size="3"
-            maxlength="3"
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            class="ip-group--first col-3 form-control text-center"
-            placeholder="IP :"
-          />
-          <input
-            type="number"
-            min="0"
-            max="999"
-            size="3"
-            maxlength="3"
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            class="ip-group--middle col-3 form-control text-center"
-          />
-          <input
-            type="number"
-            min="0"
-            max="999"
-            size="3"
-            maxlength="3"
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            class="ip-group--middle col-3 form-control text-center"
-          />
-          <div class="col-3 d-flex justify-content-start p-0">
+      <section class="first__lookup row d-flex justify-content-center py-5">
+        <h2 class="text-center col-12 col-md-3">IP Address:</h2>
+        <div class="col-12 col-md-6">
+          <div class="first__lookup__ip-group input-group">
             <input
               type="number"
               min="0"
@@ -132,16 +104,82 @@
               size="3"
               maxlength="3"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              class="ip-group--last form-control text-center w-75"
+              class="ip-group--first col-3 form-control text-center"
+              placeholder="IP :"
             />
-            <button
-              class="ip-group--button btn--purple-hover btn bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"
-            >
-              <i class="fa fa-search"></i>
-            </button>
+            <input
+              type="number"
+              min="0"
+              max="999"
+              size="3"
+              maxlength="3"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              class="ip-group--middle col-3 form-control text-center"
+            />
+            <input
+              type="number"
+              min="0"
+              max="999"
+              size="3"
+              maxlength="3"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              class="ip-group--middle col-3 form-control text-center"
+            />
+            <div class="col-3 d-flex justify-content-start p-0">
+              <input
+                type="number"
+                min="0"
+                max="999"
+                size="3"
+                maxlength="3"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                class="ip-group--last form-control text-center w-75"
+              />
+              <button
+                class="ip-group--button btn--purple-hover btn bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+    </section>
+    <section class="second container mb-5">
+      <div class="row">
+        <div class="second__risk col-12 col-md-3">
+          <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
+          <div
+            class="second__risk--level alert bg-indigo-800 col-12"
+            role="alert"
+          >
+            A simple primary alert—check it out!1
+          </div>
+          <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
+          <div
+            class="second__risk--list alert bg-indigo-800 col-12"
+            role="alert"
+          >
+            A simple primary alert—check it out!2
+          </div>
+        </div>
+        <div class="second__information col-12 col-md-9">
+          <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
+          <div
+            class="second__information--details alert bg-indigo-800"
+            role="alert"
+          >
+            A simple primary alert—check it out!3
+          </div>
+          <h3 class="py-3 text-center">Lorem, ipsum dolor:</h3>
+          <div
+            class="second__information--geo alert bg-indigo-800"
+            role="alert"
+          >
+            A simple primary alert—check it out!3
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
