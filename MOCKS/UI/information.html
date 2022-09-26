@@ -8,8 +8,140 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <script
+      type="text/javascript"
+      src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
     <link rel="stylesheet" href="./css/information.css" />
-    <title>Information</title>
+    <title>Index</title>
   </head>
-  <body></body>
+  <body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IPInfo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+          <ul class="navbar-nav">
+            <li>
+              <i
+                class="fa-solid fa-user bg-light rounded-circle p-2 indigo-900"
+              ></i>
+              <button class="btn btn-outline-light rounded-pill">
+                Contact Us
+                <i class="fa-solid fa-phone-flip"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="first container">
+      <div class="background"></div>
+      <section class="first__lookup row d-flex justify-content-center">
+        <h2 class="text-center">Lookup IP Address:</h2>
+        <div class="first__lookup__ip-group input-group mt-3 w-50">
+          <input
+            type="number"
+            min="0"
+            max="999"
+            size="3"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            class="ip-group--first col-3 form-control text-center"
+            placeholder="IP :"
+          />
+          <input
+            type="number"
+            min="0"
+            max="999"
+            size="3"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            class="ip-group--middle col-3 form-control text-center"
+          />
+          <input
+            type="number"
+            min="0"
+            max="999"
+            size="3"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            class="ip-group--middle col-3 form-control text-center"
+          />
+          <div class="col-3 d-flex justify-content-start p-0">
+            <input
+              type="number"
+              min="0"
+              max="999"
+              size="3"
+              maxlength="3"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              class="ip-group--last form-control text-center w-75"
+            />
+            <button
+              class="ip-group--button btn--purple-hover btn bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
