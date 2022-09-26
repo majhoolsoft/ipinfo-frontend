@@ -23,10 +23,13 @@ body {
   background-origin: content-box;
   z-index: -1;
 }
+.btn-purple:hover,
 .form-control:focus {
   border-color: #d63384;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(214, 51, 132, 0.6);
+  color: white !important;
+  background-color: transparent;
 }
 .btn-purple {
   background: #e14eca;
@@ -42,6 +45,7 @@ body {
   overflow: hidden;
   margin: 4px 1px;
   border-radius: 0.4285rem rem;
+  color: black;
 }
 .indigo-800 {
   color: #290661;
@@ -76,7 +80,15 @@ body {
 .first {
   height: 100vh;
 }
-
+.ip-group--first::-webkit-input-placeholder {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.ip-group--last[type="number"] {
+  text-align: right !important;
+  padding-right: 1rem;
+}
 .second {
   position: relative;
   margin-top: -150px;
@@ -116,7 +128,7 @@ code {
 .fourth .card i {
   float: right;
 }
-.fourth .card--second {
+.fourth .card--selected {
   margin-top: -10px;
 }
 
@@ -158,5 +170,8 @@ button[aria-expanded="false"] .fa-arrow-down {
   }
   .first__footer {
     border-radius: 10% 10% 0 0;
+  }
+  .second__top {
+    font-size: 0.7rem;
   }
 }
