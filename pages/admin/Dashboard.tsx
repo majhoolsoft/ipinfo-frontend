@@ -32,7 +32,7 @@ import {
   BarElement,
 } from "chart.js";
 import { Line, Bar } from "react-chartjs-2";
-
+import AdminLayout from "../../layouts/Admin/Admin";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -555,5 +555,5 @@ function Dashboard(props) {
     </>
   );
 }
-
+Dashboard.layout = AdminLayout;
 export default Dashboard;

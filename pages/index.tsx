@@ -1,10 +1,6 @@
-import React from "react";
-import Router from "next/router";
-
-export default function Index() {
-  React.useEffect(() => {
-    Router.push("/admin/Dashboard");
-  });
-
-  return <div />;
-}
+import MainLayout from "../layouts/Main/Main";
+const Home = () => {
+  return <div>home</div>;
+};
+Home.layout = MainLayout;
+export default Home;

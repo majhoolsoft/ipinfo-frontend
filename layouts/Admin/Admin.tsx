@@ -27,14 +27,17 @@ import Footer from "../../components/Footer/Footer.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import FixedPlugin from "../../components/FixedPlugin/FixedPlugin.js";
 
+import type { LayoutProps } from "../types/pageWithLayouts";
 import routes from "../../routes.js";
 const logo = "/img/react-logo.png";
 
 import { BackgroundColorContext } from "../../contexts/BackgroundColorContext";
+import ThemeContextWrapper from "../../components/ThemeWrapper/ThemeWrapper.js";
+import BackgroundColorWrapper from "../../components/BackgroundColorWrapper/BackgroundColorWrapper.js";
 
 var ps;
 
-function Admin(props) {
+const AdminLayout: LayoutProps = (props) => {
   const location = useRouter();
   const mainPanelRef = React.useRef(null);
   const [sidebarOpened, setsidebarOpened] = React.useState(
@@ -89,34 +92,38 @@ function Admin(props) {
     return "Brand";
   };
   return (
-    <BackgroundColorContext.Consumer>
-      {({ color, changeColor }) => (
-        <React.Fragment>
-          <div className="wrapper">
-            <Sidebar
-              routes={routes}
-              logo={{
-                outterLink: "https://www.creative-tim.com/",
-                text: "Creative Tim",
-                imgSrc: logo,
-              }}
-              toggleSidebar={toggleSidebar}
-            />
-            <div className="main-panel" ref={mainPanelRef} data={color}>
-              <AdminNavbar
-                brandText={getBrandText(location.pathname)}
-                toggleSidebar={toggleSidebar}
-                sidebarOpened={sidebarOpened}
-              />
-              {props.children}
-            </div>
-          </div>
-          <Footer />
-          <FixedPlugin bgColor={color} handleBgClick={changeColor} />
-        </React.Fragment>
-      )}
-    </BackgroundColorContext.Consumer>
+    <ThemeContextWrapper>
+      <BackgroundColorWrapper>
+        <BackgroundColorContext.Consumer>
+          {({ color, changeColor }) => (
+            <React.Fragment>
+              <div className="wrapper">
+                <Sidebar
+                  routes={routes}
+                  logo={{
+                    outterLink: "https://www.creative-tim.com/",
+                    text: "Creative Tim",
+                    imgSrc: logo,
+                  }}
+                  toggleSidebar={toggleSidebar}
+                />
+                <div className="main-panel" ref={mainPanelRef} data={color}>
+                  <AdminNavbar
+                    brandText={getBrandText(location.pathname)}
+                    toggleSidebar={toggleSidebar}
+                    sidebarOpened={sidebarOpened}
+                  />
+                  {props.children}
+                </div>
+              </div>
+              <Footer />
+              <FixedPlugin bgColor={color} handleBgClick={changeColor} />
+            </React.Fragment>
+          )}
+        </BackgroundColorContext.Consumer>
+      </BackgroundColorWrapper>
+    </ThemeContextWrapper>
   );
-}
+};
 
-export default Admin;
+export default AdminLayout;
