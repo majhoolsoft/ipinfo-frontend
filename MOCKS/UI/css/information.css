@@ -88,6 +88,10 @@ body {
   position: relative;
 }
 
+.second ul {
+  padding-left: 0;
+}
+
 .information__details__item__line {
   border-bottom: solid grey 1px;
   height: 1rem;
