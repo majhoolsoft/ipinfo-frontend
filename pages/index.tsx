@@ -1,6 +1,7 @@
 import MainLayout from "../layouts/Main/Main";
 import style from "../assets/css/index.module.css";
 import triangle from "../assets/img/triangle.svg";
+import Lookup from "../components/Lookup/MainLookup";
 import {
   Button,
   Card,
@@ -32,70 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <section className={style["first"]}>
-        <Container>
-          <div className={style["first__background"]} />
-          <Row>
-            <Col xs="12">
-              <h2 className="text-center">Lookup IP Address:</h2>
-            </Col>
-          </Row>
-          <Row className="d-flex justify-content-center">
-            <InputGroup className={`${style["first__input"]} mt-3 w-50`}>
-              <Col xs="3">
-                <Input
-                  type="number"
-                  min={0}
-                  max={999}
-                  size={3}
-                  maxLength={3}
-                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  className={`${style["first__input--first"]} text-center`}
-                  placeholder="IP :"
-                />
-              </Col>
-              <Col xs="3">
-                <Input
-                  type="number"
-                  min={0}
-                  max={999}
-                  size={3}
-                  maxLength={3}
-                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  className={`${style["first__input--middle"]} text-center`}
-                />
-              </Col>
-              <Col xs="3">
-                <Input
-                  type="number"
-                  min={0}
-                  max={999}
-                  size={3}
-                  maxLength={3}
-                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  className={`${style["first__input--middle"]} text-center`}
-                />
-              </Col>
-              <Col xs="3" className="d-flex justify-content-start p-0">
-                <Input
-                  type="number"
-                  min={0}
-                  max={999}
-                  size={3}
-                  maxLength={3}
-                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  className={`${style["first__input--last"]} text-center w-75`}
-                />
-                <Button
-                  className={`${style["first__input--button"]}  btn-purple--hover bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"`}
-                >
-                  <i className="fa fa-search" />
-                </Button>
-              </Col>
-            </InputGroup>
-          </Row>
-        </Container>
-      </section>
+      <Lookup />
       <section className={`${style["second"]} text-dark`}>
         <article className={`${style["second__top"]} bg-light text-center p-5`}>
           <p>

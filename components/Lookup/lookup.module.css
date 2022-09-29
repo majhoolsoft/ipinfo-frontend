@@ -1,0 +1,42 @@
+.lookup {
+  height: 100vh;
+}
+.lookup__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  z-index: -1;
+}
+.lookup__input--middle {
+  border-radius: 0;
+}
+.lookup__input--first {
+  border-radius: 20px 0 0 20px;
+}
+.lookup__input--first::-webkit-input-placeholder {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.lookup__input--last {
+  border-radius: 0;
+}
+.lookup__input--last[type="number"] {
+  text-align: right !important;
+  padding-right: 1rem;
+}
+.lookup__input--button {
+  border-radius: 0 20px 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .lookup__input {
+    width: 100% !important;
+  }
+}

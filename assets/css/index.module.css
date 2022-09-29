@@ -1,40 +1,3 @@
-.first {
-  height: 100vh;
-}
-.first__background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: content-box;
-  z-index: -1;
-}
-.first__input--middle {
-  border-radius: 0;
-}
-.first__input--first {
-  border-radius: 20px 0 0 20px;
-}
-.first__input--first::-webkit-input-placeholder {
-  position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
-}
-.first__input--last {
-  border-radius: 0;
-}
-.first__input--last[type="number"] {
-  text-align: right !important;
-  padding-right: 1rem;
-}
-.first__input--button {
-  border-radius: 0 20px 20px 0;
-}
-
 .second {
   position: relative;
   margin-top: -150px;
@@ -78,9 +41,6 @@ button[aria-expanded="false"] .fa-arrow-down {
 }
 
 @media screen and (max-width: 768px) {
-  .first__input {
-    width: 100% !important;
-  }
   .second__top {
     font-size: 0.7rem;
   }
