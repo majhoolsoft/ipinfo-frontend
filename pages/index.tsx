@@ -7,7 +7,6 @@ import {
   CardBody,
   CardHeader,
   CardSubtitle,
-  CardText,
   CardTitle,
   Col,
   Collapse,
@@ -50,7 +49,7 @@ const Home = () => {
                   max={999}
                   size={3}
                   maxLength={3}
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   className={`${style["first__input--first"]} text-center`}
                   placeholder="IP :"
                 />
@@ -62,7 +61,7 @@ const Home = () => {
                   max={999}
                   size={3}
                   maxLength={3}
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   className={`${style["first__input--middle"]} text-center`}
                 />
               </Col>
@@ -73,7 +72,7 @@ const Home = () => {
                   max={999}
                   size={3}
                   maxLength={3}
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   className={`${style["first__input--middle"]} text-center`}
                 />
               </Col>
@@ -84,7 +83,7 @@ const Home = () => {
                   max={999}
                   size={3}
                   maxLength={3}
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  // oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   className={`${style["first__input--last"]} text-center w-75`}
                 />
                 <Button
@@ -220,33 +219,29 @@ const Home = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nam, consequatur?
                   </CardSubtitle>
-                  <CardText className="px-3">
-                    <h3>$30</h3>
-                    <ul>
-                      <small>
-                        <li>
-                          Lorem ipsum dolor sit amet.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit amet consectetur.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem, ipsum dolor.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit, amet
-                          <i className="fa-solid fa-circle-check" />
-                        </li>
-                      </small>
-                    </ul>
-                  </CardText>
+                  <CardTitle tag="h3">$30</CardTitle>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem, ipsum dolor.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit, amet
+                      <i className="fa-solid fa-circle-check" />
+                    </li>
+                  </ul>
                   <Button color="danger" className="rounded-pill my-3">
                     Buy now
                   </Button>
@@ -267,33 +262,29 @@ const Home = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nam, consequatur?
                   </CardSubtitle>
-                  <CardText className="px-3">
-                    <h3>$30</h3>
-                    <ul>
-                      <small>
-                        <li>
-                          Lorem ipsum dolor sit amet.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit amet consectetur.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem, ipsum dolor.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit, amet
-                          <i className="fa-solid fa-circle-check" />
-                        </li>
-                      </small>
-                    </ul>
-                  </CardText>
+                  <CardTitle tag="h3">$30</CardTitle>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem, ipsum dolor.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit, amet
+                      <i className="fa-solid fa-circle-check" />
+                    </li>
+                  </ul>
                   <Button color="success" className="rounded-pill my-3">
                     Buy now
                   </Button>
@@ -314,33 +305,29 @@ const Home = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nam, consequatur?
                   </CardSubtitle>
-                  <CardText className="px-3">
-                    <h3>$30</h3>
-                    <ul>
-                      <small>
-                        <li>
-                          Lorem ipsum dolor sit amet.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit amet consectetur.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem, ipsum dolor.
-                          <i className="fa-solid fa-circle-xmark" />
-                        </li>
-                        <li>
-                          Lorem ipsum dolor sit, amet
-                          <i className="fa-solid fa-circle-check" />
-                        </li>
-                      </small>
-                    </ul>
-                  </CardText>
+                  <CardTitle tag="h3">$30</CardTitle>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem, ipsum dolor.
+                      <i className="fa-solid fa-circle-xmark" />
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit, amet
+                      <i className="fa-solid fa-circle-check" />
+                    </li>
+                  </ul>
                   <Button color="warning" className="rounded-pill my-3">
                     Buy now
                   </Button>
@@ -561,8 +548,8 @@ const Home = () => {
           <Container>
             <Row>
               <Col md="6" className="mb-5">
-                <Card className="bg-indigo-900 p-0">
-                  <CardBody>
+                <Card className="bg-indigo-900">
+                  <CardBody className="p-0">
                     <div className={style["code-window"]}>
                       <div
                         className={`${style["code-window__header"]} bg-indigo-900 px-2 rounded-top d-flex align-items-center`}
