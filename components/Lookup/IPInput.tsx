@@ -1,10 +1,10 @@
-import style from "./lookup.module.css";
+import style from "./css/lookup.module.css";
 
 import { Row, Col, Button, Input, InputGroup } from "reactstrap";
 const IPInput = () => {
   return (
     <>
-      <InputGroup className={`${style["lookup__input"]} mt-3 w-50`}>
+      <InputGroup>
         <Col xs="3">
           <Input
             type="number"

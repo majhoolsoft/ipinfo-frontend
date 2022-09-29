@@ -1,0 +1,21 @@
+.information ul {
+  padding-left: 0;
+}
+
+.space {
+  border-bottom: solid grey 1px;
+  height: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .space {
+    border-bottom: unset;
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  .space:before {
+    content: ":";
+  }
+}

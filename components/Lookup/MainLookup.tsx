@@ -1,4 +1,4 @@
-import style from "./lookup.module.css";
+import style from "./css/lookup.module.css";
 import { Col, Container, Row } from "reactstrap";
 import IPInput from "./IPInput";
 const MainLookup = () => {
@@ -11,7 +11,7 @@ const MainLookup = () => {
             <h2 className="text-center">Lookup IP Address:</h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-center">
+        <Row className={`${style["lookup__input"]} mx-auto w-50`}>
           <IPInput></IPInput>
         </Row>
       </Container>

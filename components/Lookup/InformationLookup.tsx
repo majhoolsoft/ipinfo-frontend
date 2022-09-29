@@ -1,11 +1,10 @@
-import style from "./lookup.module.css";
 import { Col, Container, Row } from "reactstrap";
 import IPInput from "./IPInput";
 const MainLookup = () => {
   return (
-    <section className={style["lookup"]}>
+    <section>
       <Container>
-        <Row>
+        <Row className="d-flex justify-content-center text-center">
           <Col xs="12" md="3">
             <h2 className="text-center">IP Address:</h2>
           </Col>

@@ -7,7 +7,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("./img/background.svg");
+  background-image: url("../img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
