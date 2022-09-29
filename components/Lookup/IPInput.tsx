@@ -5,7 +5,7 @@ const IPInput = () => {
   return (
     <>
       <InputGroup>
-        <Col xs="3">
+        <Col xs="2">
           <Input
             type="number"
             min={0}
@@ -17,7 +17,8 @@ const IPInput = () => {
             placeholder="IP :"
           />
         </Col>
-        <Col xs="3">
+        <Col xs="3" className="d-flex justify-content-center align-items-end">
+          <i className="fa fa-circle text-black mx-2 bg-indigo-800 p-1 rounded-circle text-black mx-2  "></i>
           <Input
             type="number"
             min={0}
@@ -28,7 +29,8 @@ const IPInput = () => {
             className={`${style["lookup__input--middle"]} text-center`}
           />
         </Col>
-        <Col xs="3">
+        <Col xs="3" className="d-flex justify-content-center align-items-end">
+          <i className="fa fa-circle text-black mx-2 bg-indigo-800 p-1 rounded-circle text-black mx-2  "></i>
           <Input
             type="number"
             min={0}
@@ -39,7 +41,11 @@ const IPInput = () => {
             className={`${style["lookup__input--middle"]} text-center`}
           />
         </Col>
-        <Col xs="3" className="d-flex justify-content-start p-0">
+        <Col
+          xs="3"
+          className="d-flex justify-content-start align-items-end p-0"
+        >
+          <i className="fa fa-circle text-black mx-2 bg-indigo-800 p-1 rounded-circle"></i>
           <Input
             type="number"
             min={0}
@@ -50,7 +56,7 @@ const IPInput = () => {
             className={`${style["lookup__input--last"]} text-center w-75`}
           />
           <Button
-            className={`${style["lookup__input--button"]}  btn-purple--hover bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"`}
+            className={`${style["lookup__input--button"]} align-self-center h-100 btn-purple--hover bg-indigo-900 w-25 border border-white border-2 border-start-0 p-0 text-white"`}
           >
             <i className="fa fa-search" />
           </Button>
